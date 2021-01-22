@@ -1,5 +1,43 @@
+:root{
+    --main-color: #FB6964;
+}
 body{
     margin: 0;
     padding: 0;
-
+    background-color: var(--main-color);
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+#quote-box{
+    background-color: white;    
+    border-radius: 5px;
+    padding: 30px;
+    width: 450px;
+}
+#text{
+    color: var(--main-color);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.75em;
+}
+#author{
+    color: var(--main-color);
+    font-size: 1em;    
+    text-align: right
+}
+#new-quote,
+#tweet-quote{
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
