@@ -4,17 +4,19 @@
 body{
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     background-color: var(--main-color);
     font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
 }
 #quote-box{
-    background-color: white;    
+    background-color: white;
     border-radius: 5px;
-    padding: 30px;
+    padding: 10px 50px;
     width: 450px;
+    height: fit-content;
 }
 #text{
     color: var(--main-color);
@@ -34,10 +36,18 @@ body{
     text-align: center;
     padding: 10px;
     border-radius: 5px;
+    font-size: 1.2em;    
 }
 .buttons{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
+}
+a{
+    text-decoration: none;
+}
+#new-quote:hover,
+#tweet-quote:hover{
+    opacity: 0.85;
 }
 
