@@ -1,6 +1,18 @@
 :root{
     --main-color: #FB6964;
 }
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+  }
+
 body{
     margin: 0;
     padding: 0;
@@ -27,7 +39,7 @@ body{
 #author{
     color: var(--main-color);
     font-size: 1em;    
-    text-align: right
+    text-align: right;
 }
 #new-quote,
 #tweet-quote{
@@ -41,7 +53,8 @@ body{
 .buttons{
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
+    margin: 25px 0;    
 }
 a{
     text-decoration: none;
