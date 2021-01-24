@@ -1,27 +1,21 @@
-<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 <!DOCTYPE html>
 <html>
   <head>
     <title>Random Quote Machine</title>
-    <meta charset="UTF-8" />
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://kit.fontawesome.com/d1d6edd90f.js" crossorigin="anonymous"></script>    
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />       
+    <script src="https://kit.fontawesome.com/d1d6edd90f.js" crossorigin="anonymous"></script>         
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script>     
-     $(document).ready(function(){        
-        $("#new-quote").click(newQuote());
-      });      
-    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
   </head>
   <body>
     <div id="quote-box">
         <p id="text" class="fade-in"></script></p>
         <p id="author" class="fade-in"></script></p>
         <div class="buttons">          
-          <a href="twitter.com/intent/tweet" id="tweet-quote" target="_blank" title="Tweet it!"><i class="fab fa-twitter"></i></a>
-          <a href="" id="new-quote">New quote</a>
+          <a id="tweet-quote" target="_blank" title="Tweet it!"><i class="fab fa-twitter"></i></a>
+          <button id="new-quote" onclick=newQuote()>New quote</a>
         </div>
     </div>     
   </body>
