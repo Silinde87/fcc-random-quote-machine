@@ -28,13 +28,18 @@ function newQuote(){
     let currentQuote = quotesList.quotes[index].quote;
     let currentAuthor = quotesList.quotes[index].author;
     
-    //Showing quote at p #text
-    let quote = document.querySelector('#text');
-    quote.innerHTML = '<i class="fa fa-quote-left"></i> ' + currentQuote;
-    
-    //Showing author at p #author
-    let author = document.querySelector('#author');
-    author.innerHTML = '- ' + currentAuthor;
+    //Fade-in-out text and author
+    $('#text,#author').animate({ opacity: 0 }, 400, function () {
+        $(this).animate({ opacity: 1 }, 400);
+        
+        //Showing quote at p #text
+        let quote = document.querySelector('#text');
+        quote.innerHTML = '<i class="fa fa-quote-left"></i> ' + currentQuote;
+        
+        //Showing author at p #author
+        let author = document.querySelector('#author');
+        author.innerHTML = '- ' + currentAuthor;
+    });
 
     //Tweet feature
     $('#tweet-quote').attr(
@@ -46,7 +51,6 @@ function newQuote(){
     //Background color randomize
     let color = Math.floor(Math.random() * colors.length);
     $(':root').css("--main-color", colors[color]);
-    return;
 }
 
 $(document).ready(newQuote());
